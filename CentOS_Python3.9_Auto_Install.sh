@@ -12,6 +12,8 @@ echo "[global]
 index-url = https://pypi.doubanio.com/simple
 trusted-host = pypi.doubanio.com" > ~/.pip/pip.conf
 pip3 install --upgrade pip &&
+echo "export PATH=/usr/local/python3/bin:$PATH" >> /etc/profile
+source /etc/profile
 cd ..
 rm -rf Python-3.9.0a2 Python-3.9.0a2.tar.xz
 echo "python3 installed successfullly!"
